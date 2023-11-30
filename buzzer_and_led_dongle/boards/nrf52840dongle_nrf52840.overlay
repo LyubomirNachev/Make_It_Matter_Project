@@ -1,0 +1,14 @@
+
+/ {
+    leds {
+        compatible = "gpio-leds";
+        notled_buzzer: buzzer {
+            gpios = <&gpio0 17 GPIO_ACTIVE_LOW>;
+            label = "Buzzer";
+        };
+    	};
+    aliases {
+		buzzer0 = &notled_buzzer;
+    };
+};
+
